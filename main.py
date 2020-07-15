@@ -1,3 +1,4 @@
+"""
 board = [
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
@@ -9,8 +10,7 @@ board = [
     [1,2,0,0,0,7,4,0,0],
     [0,4,9,2,0,6,0,0,7]
 ]
-
-
+"""
 #Finds the first empty space in the board
 
 def find_space(board):
@@ -92,11 +92,6 @@ def solver(board):
 #Changes the number in the board for a certain row and column
 def set_board_number(board, number, row, col):
     board[row][col] = number
-
     return
 
 
-# Run the program
-solver(board)
-print("\n    Solved Version \n")
-print_board(board)
